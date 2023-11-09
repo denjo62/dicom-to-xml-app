@@ -45,3 +45,13 @@ You can use Docker Compose to orchestrate the dicom-to-xml microservice and MySQ
 To start both services using Docker Compose, run:
 
     docker-compose up --build
+
+##Testing
+
+To test the service, you can make a POST request with a DICOM file in the request body. A sample DICOM file (0003.dcm) is provided in the resources folder of the project for test purposes.
+
+Example using cURL:
+
+    curl -X POST -H "Content-Type: application/dicom" --data-binary "@path/to/sample.dcm" http://localhost:8080/convert
+
+Replace path/to/sample.dcm with the actual path to the DICOM file you want to test.
