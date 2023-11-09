@@ -1,5 +1,6 @@
 package at.technikum.DicomToXML;
 
+import at.technikum.DicomToXML.exceptions.DicomConversionException;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.io.ClassPathResource;
 

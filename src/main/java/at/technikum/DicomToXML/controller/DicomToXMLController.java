@@ -1,5 +1,7 @@
-package at.technikum.DicomToXML;
+package at.technikum.DicomToXML.controller;
 
+import at.technikum.DicomToXML.exceptions.DicomConversionException;
+import at.technikum.DicomToXML.DicomToXMLService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

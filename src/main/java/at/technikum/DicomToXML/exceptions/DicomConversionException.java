@@ -1,4 +1,4 @@
-package at.technikum.DicomToXML;
+package at.technikum.DicomToXML.exceptions;
 
 public class DicomConversionException extends Exception {
     public DicomConversionException(String message) {

@@ -4,6 +4,7 @@ FROM amazoncorretto:17
 # Set the working directory in the container
 WORKDIR /app
 
+
 # Copy the JAR file (build your project as a JAR) to the container
 COPY target/DicomToXML-1.0-SNAPSHOT.jar /app/DicomToXML-1.0-SNAPSHOT.jar
 
