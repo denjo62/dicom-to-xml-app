@@ -3,7 +3,7 @@
 ## 1. Codebase
 
 - **Goal**: Maintain a single codebase.
-- **Implementation**: The dicom-to-xml microservice maintains a single code repository on [GitHub](https://github.com/denjo62/dicom-to-xml-app). All code related to the microservice is stored in this centralized repository.
+- **Implementation**: The microservice maintains a single code repository on [GitHub](https://github.com/denjo62/dicom-to-xml-app). All code related to the microservice is stored in this centralized repository.
 
 ## 2. Dependencies
 
@@ -28,12 +28,12 @@
 ## 6. Processes
 
 - **Goal**: Execute the app as one or more stateless processes.
-- **Implementation**: The dicom-to-xml microservice is designed as a stateless Spring Boot application. It can be horizontally scaled by running multiple instances, each independently handling requests without shared state.
+- **Implementation**: The microservice is designed as a stateless Spring Boot application. It can be horizontally scaled by running multiple instances, each independently handling requests without shared state.
 
 ## 7. Port Binding
 
 - **Goal**: Export services via port binding.
-- **Implementation**: The microservice exports its services through port binding. For example, the application is bound to port 8080, allowing external access to the DICOM to XML conversion service.
+- **Implementation**: The microservice exports its services through port binding. For example, the application is bound to port 8080, allowing external access to the conversion service.
 
 ## 8. Concurrency
 
