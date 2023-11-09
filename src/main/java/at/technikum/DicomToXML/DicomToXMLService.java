@@ -44,11 +44,7 @@ public class DicomToXMLService {
             // Try to insert data into the existing table
             jdbcTemplate.update(sql, xmlData);
         } catch (DataAccessException e) {
-            // Handle the exception - this means the table may not exist
-            // You can add code to create the table if it doesn't exist
             createTableIfNotExists();
-
-            // Now that the table should exist, attempt the insertion again
             jdbcTemplate.update(sql, xmlData);
         }
     }
